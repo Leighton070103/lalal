@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_task_today"
+        android:icon="@drawable/menu_today_selector"
+        android:title="Today" />
+    <item
+        android:id="@+id/action_task_list"
+        android:icon="@drawable/menu_task_list_selector"
+        android:title="All Tasks" />
+    <item
+        android:id="@+id/action_report"
+        android:icon="@drawable/menu_report_selector"
+        android:title="Report" />
+    <item
+        android:id="@+id/action_wish_tree"
+        android:icon="@drawable/menu_wish_tree_selector"
+        android:title="Wish Tree" />
+    <item
+        android:id="@+id/action_exit"
+        android:icon="@drawable/ic_menu_exit"
+        android:title="Exit" />
+</menu>

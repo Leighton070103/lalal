@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_task"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mad.goodgoodstudy.activity.EditTaskActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_task"
+        android:id="@+id/activity_edit_task_header_tv"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        style="@style/HeaderTheme" />
+
+    <TableLayout
+        android:layout_margin="10dp"
+        android:layout_below="@id/activity_edit_task_header_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_edit_task_table_layout"
+        android:stretchColumns="0,1"
+        android:shrinkColumns="0,1">
+
+        <TableRow
+            style="@style/TableRowStyle">
+
+            <TextView
+                android:text="@string/name_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_edit_task_task_name_tv" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_edit_task_task_name_et" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/activity_edit_task_task_type_tr"
+            style="@style/TableRowStyle">
+
+            <TextView
+                android:text="@string/type_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_edit_task_task_type_tv" />
+            <Spinner
+                android:gravity="center_horizontal"
+                android:entries="@array/task_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_edit_task_task_type_spn" />
+        </TableRow>
+
+        <TableRow
+            style="@style/TableRowStyle"
+            android:id="@+id/activity_edit_task_planned_time_tr">
+
+            <TextView
+                android:text="@string/times_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="@string/choose"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_edit_task_planed_time_tv" />
+        </TableRow>
+
+        <TableRow
+            style="@style/TableRowStyle"
+            android:id="@+id/activity_edit_task_start_time_tr">
+
+            <TextView
+                android:text="Start at:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/choose"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_edit_task_start_time_tv" />
+        </TableRow>
+        <TableRow
+            style="@style/TableRowStyle">
+            <TextView
+                android:text="Duration:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content">
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:id="@+id/activity_edit_task_hour_tv"
+                    android:layout_width="wrap_content"
+                    android:text="@string/choose"
+                    android:layout_weight="0.7"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/hour"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:id="@+id/activity_edit_task_min_tv"
+                    android:text="@string/choose"
+                    android:gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:text="@string/min"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+        </TableRow>
+    </TableLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/activity_edit_task_table_layout">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_edit_task_noise_moniter_chk"
+            android:text="@string/noise_monitor"
+            android:layout_weight="1" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_edit_task_software_moniter_chk"
+            android:text="@string/software_monitor"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+        <Button
+            android:layout_margin="10dp"
+            android:text="@string/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_edit_task_save_btn"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"/>
+
+        <Button
+            android:layout_margin="10dp"
+            android:text="@string/cancel"
+            android:background="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_edit_task_cancel_btn"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

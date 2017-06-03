@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/ItemLayoutStyle">
+    <LinearLayout
+        android:id="@+id/item_llayout"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/item_content_llayout"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                style="@style/TaskNameStyle"
+                android:id="@+id/item_task_name_tv" />
+            <TextView
+                style="@style/TaskDurationStyle"
+                android:id="@+id/item_task_duration_tv" />
+            <TextView
+                style="@style/TaskStartTimeStyle"
+                android:id="@+id/item_daily_task_start_time_tv"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_swipe_button_llayout"
+            android:layout_height="match_parent"
+            android:layout_width="150dp">
+            <TextView
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/item_delete_tv"
+                android:background="@color/colorAccent"
+                android:text="Delete"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary" />
+
+</LinearLayout>

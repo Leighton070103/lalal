@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/report_content_llayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REPORT"
+        android:id="@+id/header_tv"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        style="@style/HeaderTheme" />
+
+
+    <android.support.v4.app.FragmentTabHost
+        android:layout_marginTop="20dp"
+        android:id="@+id/report_tab_host"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_tv">
+        <FrameLayout
+            android:id="@+id/tab_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </android.support.v4.app.FragmentTabHost>
+
+</LinearLayout>

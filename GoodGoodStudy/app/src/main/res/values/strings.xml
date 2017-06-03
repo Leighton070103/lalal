@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">GoodGoodStudy</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="task_list_status">
+        <item>Show all</item>
+        <item>Show incompleted</item>
+    </string-array>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_edit_task">EditTaskActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="edit_task">EDIT TASK</string>
+    <string name="new_task">NEW TASK</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="wish_tree">WISH TREE</string>
+    <string-array name="task_type">
+        <item>Daily</item>
+        <item>One time</item>
+        <item>Long-term</item>
+    </string-array>
+    <string name="reminder">Reminder</string>
+    <string name="is_started"> is started!</string>
+    <string name="is_complete"> is complete!</string>
+    <string name="name_hint">Name: </string>
+    <string name="type_hint">Type: </string>
+    <string name="times_hint">Times: </string>
+    <string name="choose">Choose...</string>
+    <string name="min">Min</string>
+    <string name="hour">Hour</string>
+    <string name="save">Save</string>
+    <string name="software_monitor">Software Monitor</string>
+    <string name="noise_monitor">Noise Monitor</string>
+    <string name="incomplete_hint">
+        You haven not completed all necessary information for the task yet.
+    </string>
+    <string name="create_daily_task_hint">
+        You created a daily task. It will automatically be add to your schedule.
+    </string>
+    <string-array name="operation_type">
+        <item>Edit</item>
+        <item>Add to schedule</item>
+    </string-array>
+    <string-array name="record_operation_type">
+        <item>Edit</item>
+        <item>Start right now</item>
+        <item>Postpone</item>
+    </string-array>
+    <string name="alert">Alert</string>
+    <string name="delete_alert_msg">Are you sure to delete this task?</string>
+    <string name="task_today">TASK TODAY</string>
+    <string name="executing">EXECUTING</string>
+    <string name="incomplete">INCOMPLETE</string>
+    <string name="complete">COMPLETE</string>
+    <string name="canceled">CANCELED</string>
+</resources>
